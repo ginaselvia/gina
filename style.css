@@ -1,70 +1,37 @@
 body {
-	background-image: url(sg.jpg);
+	background-image: url(ut.jpg);
 	background-size: 100% 100%;
 	margin: auto;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 }
-.menu {
-	font-family: tahoma;
-	font-weight: bold;
-	height: 70px;
-	width: 100%;
-	background: black;
-	border-radius: 5px;
-	font-size: 15px;
+* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
 }
-label{
-	font-family: comic sans ms;
-	font-size: 20pt;
-	color: white;
-	margin: 10px;
-	padding: 5px;
+nav {
+	width: 50%;
+	height: 30px;
+	border: 1px solid;
+	line-height: 30px;
+}
+nav ul li {
+	width: 20%;
+	height: 30px;
+	border: 1px solid;
 	float: left;
+	lighting-color: none;
+	text-align: center;
 }
-
-.menu ul {
-	margin: 0px;
-	padding: 5px;
-	background: none;
+nav ul li:hover ul {
 	display: block;
-	float: right;
 }
-
-.menu ul li {
-	list-style: none;
-	display: inline-block;
-}
-.menu ul li a {
-	display: block;
-	text-decoration: none;
-	padding: 20px;
-	color: #ddd;
-}
-.menu ul li a:hover {
-	display: block;
-	color: green;
-	background: #222;
-	box-shadow: inset 0px 0px 5px #000;
-}
-.menu ul li .dropdown {
+nav ul li ul {
 	display: none;
 }
-.menu ul li:hover .dropdown {
-	display: block;
-	background: black;
-	position: absolute;
-	padding: 10px;
-}
-.menu ul li:hover .dropdown li {
-	display: block;
-}
-.menu ul li:hover .dropdown li a {
-	padding: 10px;
-	border-radius: 5px;
-	margin-bottom: 5px;
-}
-.menu ul li:hover .dropdown li a:hover {
-	background: #222;
-	box-shadow: 0px 0px 5px #000;
+nav ul li ul li {
+	width: 100%;
+	height: 30px;
+	border: 1px solid;
 }
